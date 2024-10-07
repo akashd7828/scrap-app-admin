@@ -1,0 +1,102 @@
+/* Overall container for the form */
+.our-blogs-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Title of the form */
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Style for each form group (input and label pair) */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Labels for inputs */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Input styles for text, file inputs, and textarea */
+input[type="file"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Textarea specific styling */
+textarea.description-input {
+  height: 120px;
+  resize: vertical;
+}
+
+/* Preview for the image */
+.image-preview img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Button styles */
+.submit-btn {
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* Responsive design: On smaller screens, make adjustments */
+@media (max-width: 768px) {
+  .our-blogs-container {
+    padding: 15px;
+  }
+
+  .form-title {
+    font-size: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  input[type="file"],
+  input[type="text"],
+  textarea {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
